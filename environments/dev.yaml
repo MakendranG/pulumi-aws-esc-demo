@@ -1,0 +1,7 @@
+values:
+  pulumiConfig:
+    awsRegion: us-west-2
+    bucketPrefix: dev-esc-
+    dbPassword:
+      secure: AAABAOGlfaJzBEw/kG7KpgpMO4R2Umx3h+XJyZtYGMviEYlnS0iq+Q==
+    dbInstanceClass: db.t3.micro
