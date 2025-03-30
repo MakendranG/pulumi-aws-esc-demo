@@ -1,0 +1,15 @@
+"""
+Main Pulumi program for AWS infrastructure using ESC configuration
+"""
+import pulumi
+from modules import storage, database
+
+# Create an S3 bucket
+bucket = storage.create_bucket()
+
+# Create an RDS instance
+db_instance = database.create_rds_instance()
+
+# Export outputs
+pulumi.export("bucket_name", bucket.bucket)
+pulumi.export("db_endpoint", db_instance.endpoint)
