@@ -1,0 +1,4 @@
+environment:
+  - test/dev-environment
+config:
+  aws:region: us-east-1
